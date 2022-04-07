@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VandyLinks</title>
+    <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans"
+            rel="stylesheet"
+            type="text/css"
+    />
+    <style>
+        html,
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            margin: 0;
+            min-height: 269px; /* 180px for chrome, 269px for firefox */
+            padding: 0;
+            max-width: 400px; /* height (not max): 384px for chrome, 400px for firefox */
+            text-align: center;
+        }
+
+        h1 {
+            font-family: "Menlo", monospace;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0;
+            color: #000000;
+        }
+
+        a:link,
+        a:visited {
+            color: #000000;
+            outline: 0;
+            text-decoration: none;
+        }
+
+        .button {
+            background-color: #D8AB4C; /* Vandy Gold */
+            border: none;
+            border-radius: 12px;
+            color: #000000;
+            padding: 10px 18px;
+            text-align: center;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 900;
+            margin: 5px 5px;
+        }
+
+        img {
+            width: 30px;
+        }
+
+        .modal-header {
+            align-items: center;
+            border-bottom: 0.5px solid #dadada;
+        }
+
+        .modal-icons {
+            height: 50px;
+            width: 100%;
+        }
+
+        .logo {
+            padding: 16px;
+        }
+
+        .logo-icon {
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        .version {
+            color: #000000;
+            font-size: 14px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 5px 10px;
+        }
+
+        .flex {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 120px;
+        }
+
+        .flex:hover {
+            opacity: 0.7;
+        }
+
+        .flex-footer {
+            text-align: center;
+            margin-bottom: 7px;
+        }
+
+    </style>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+<div class="modal-header">
+    <h1 class="logo">
+        <img class="logo-icon" src="images/vandy-logo.png" />VandyLinks
+        <span class="version">(Undergraduate)</span>
+    </h1>
+</div>
+
+<div class="modal-icons">
+    <div class="flex-container">
+        <div class="flex">
+            <a class="button" href="https://yes.vanderbilt.edu/" target="_blank">
+                YES
+            </a>
+        </div>
+
+        <div class="flex">
+            <a class="button" href="http://gmail.vanderbilt.edu/" target="_blank">
+                Email
+            </a>
+        </div>
+
+        <div class="flex">
+            <a class="button" href="https://acad.app.vanderbilt.edu/more/SearchClasses!input.action" target="_blank">
+                Courses
+            </a>
+        </div>
+
+        <div class="flex">
+            <a class="button" href="https://vanderbilt.datacenter.adirondacksolutions.com/VANDERBILT_THDSS_PROD/navigation/student/my-screen" target="_blank">
+                Housing
+            </a>
+        </div>
+
+        <div class="flex">
+            <a class="button" href="https://get.cbord.com/vanderbilt" target="_blank">
+                GET
+            </a>
+        </div>
+
+        <!-- Update -->
+
+        <div class="flex">
+            <a class="button" href="https://netnutrition.cbord.com/nn-prod/vucampusdining" target="_blank">
+                Dining
+            </a>
+        </div>
+
+        <div class="flex">
+            <a class="button" href="https://www.vanderbilt.edu/coronavirus/covid19dashboard/" target="_blank">
+                COVID-19
+            </a>
+        </div>
+
+        
+        <div class="flex">
+            <a class="button" href="https://www.library.vanderbilt.edu/" target="_blank">
+                Library
+            </a>
+        </div>
+
+        <div class="flex">
+            <a class="button" href="https://brightspace.vanderbilt.edu/" target="_blank">
+                Brightspace
+            </a>
+        </div>
+
+    </div>
+
+    <div class="flex-footer">
+        <p>Provide feedback by <a href="mailto:austin.w.wang@vanderbilt.edu">email</a>.</p>
+    </div>
+</div>
+
+
+</body>
+</html>
